@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: add repo
-        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg8 -y -qq > /dev/null
+        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg8 -y > /dev/null
       - name: apt update
         run: sudo apt update -qq > /dev/null
       - name: install ffmpeg
