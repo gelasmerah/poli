@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-#      - name: apt update
-#        run: sudo apt update -qq > /dev/null
-#      - name: install ffmpeg
-#        run: sudo apt install ffmpeg -y -qq > /dev/null  
+      - name: apt update
+        run: sudo apt update -qq > /dev/null
+      - name: install ffmpeg
+        run: sudo apt install ffmpeg -y -qq > /dev/null  
       - name: live stream
         run: ${{ github.event.inputs.ffmpegcom }}
