@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: apt update
-        run: sudo apt update -qq > /dev/null
+      - name: cek ubuntu
+        run: uname -a
       - name: install ffmpeg
       #  run: sudo apt install ffmpeg -y -qq > /dev/null  
         run: wget https://github.com/ffbinaries/ffbinaries-prebuilt/releases/download/v6.1/ffmpeg-6.1-linux-64.zip;unzip ffmpeg-6.1-linux-64.zip;chmod 755 ./ffmpeg;
