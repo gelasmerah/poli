@@ -16,6 +16,6 @@ jobs:
         run: uname -a
       - name: install ffmpeg
       #  run: sudo apt install ffmpeg -y -qq > /dev/null  
-        run: wget https://github.com/eugeneware/ffmpeg-static/releases/download/b6.1.1/ffmpeg-linux-x64;mv ffmpeg-linux-x64 ffmpeg;chmod 755 ./ffmpeg;
+        run: wget https://ftp.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_6.1.1-3ubuntu5_amd64.deb;dpkg-deb -x ffmpeg_6.1.1-3ubuntu5_amd64.deb ffmpeg6;
       - name: live stream
         run: ${{ github.event.inputs.ffmpegcom }}
