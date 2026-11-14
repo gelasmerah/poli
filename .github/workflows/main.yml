@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - name: update dan ffmpeg
+      - name: update
         run: sudo apt update
       - name: install ffmpeg
         run: sudo apt install ffmpeg -y -qq > /dev/null  
